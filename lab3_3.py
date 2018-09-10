@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-h = input('Your height in m: ')
-w = input('Your weight in kg: ')
+height = input('Зріст у метрах: ')
+weight = input('Вага у кілограмах: ')
 
-s = float(w) / float(h) ** 2
+BMI = float(weight) / float(height) ** 2
 
-print('Your Body Mass Index: ' + str(s))
+print('Your Body Mass Index: ' + str(BMI))
