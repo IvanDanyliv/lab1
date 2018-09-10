@@ -5,4 +5,4 @@ weight = input('Вага у кілограмах: ')
 
 BMI = float(weight) / float(height) ** 2
 
-print('Your Body Mass Index: ' + str(BMI))
+print('Індекс маси тіла: ' + str(BMI))
