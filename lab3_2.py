@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 
-f = input('Fahrenheit temperature: ')
-
-c = (int(f) - 32) / 1.8
-
-print('Celsius temperature: ' + str(c))
+fahrenheit = input('Fahrenheit temperature: ')
+celsius = (int(fahrenheit) - 32) / 1.8
+print('Celsius temperature: ' + str(celsius))
