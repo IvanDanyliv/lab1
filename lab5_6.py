@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-#!-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
 a = int(input('Перша сторона трникутника: '))
 b = int(input('Друга сторона трникутника: '))
