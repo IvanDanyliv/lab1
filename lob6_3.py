@@ -2,21 +2,22 @@
 #!-*- coding: utf-8 -*-
 
 import math
+import decimal
 
 def ui_input() -> list:
     #Input of argument
-    a = float(input("Available amount "))
-    b = float(input("Required amount "))
-    c = float(input("Interest rate "))
+    a = decimal.Decimal(input("Available amount "))
+    b = decimal.Decimal(input("Required amount "))
+    c = decimal.Decimal(input("Interest rate "))
     return[a, b, c]
 
-def ui_output(years: float):
+def ui_output(d: float):
     #Output of result
-    print (years)
+    print (d)
 
-def calculate_area_triangle(year: list) -> float:
-    #Calculate number of years
-    years = math.log(year[1]/year[0], (1+year[2])/100) 
-    return years
+def deposit_duration_calculate(deposit: list) -> float:
+    #Calculate duration of deposit
+    duration = math.log(deposit[1]/deposit[0], (1+deposit[2]/100))
+    return duration
 
-ui_output(calculate_area_triangle(ui_input()))
+ui_output(deposit_duration_calculate(ui_input()))
